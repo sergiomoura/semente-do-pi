@@ -1,3 +1,57 @@
-* {
-    font-family: 'Dancing Script', cursive;
+:root {
+    --cor-primaria: #333;
+    --cor-secundaria: #474747;
+    --cor-destaque: #00b8b8;
 }
+
+/* zerar o css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header.... fundo amarelo de fora a fora com 60px de altura. O conteúdo dele guarda 100px de distância das laterais*/
+header{
+    background-color: var(--cor-primaria);
+    height: 60px;
+    width: 100%;
+}
+
+header div {
+    margin: 0 100px;
+    height: 100%;
+    display: flex;
+    background-color: var(--cor-secundaria);
+}
+
+header div a{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+header div a:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+}
+
+header div a:last-child{
+    margin-left: auto;
+}
+
+
+/* main... fundo rosa, tambem de fora a fora
+mas o conteúdo dele ficará centralizado à uma distância de 100px das laterais e 50px do topo e do fundo */
+
+/*
+footer.... fundo amarelo de fora a fora com 60px de altura
+*/
+
